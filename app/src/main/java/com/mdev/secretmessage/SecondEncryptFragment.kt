@@ -13,9 +13,9 @@ class SecondEncryptFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_second_encrypt, container, false)
-//        val secondMessage = EncryptFragmentArgs.fromBundle(requireArguments()).secondMessage
         val secondMessage = SecondEncryptFragmentArgs.fromBundle(requireArguments()).secondMessage
 
+        // Printing second Message.
         val secondEncryptedView = view.findViewById<TextView>(R.id.second_encrypted_message)
         secondEncryptedView.text = secondMessage.reversed()
 

@@ -14,10 +14,13 @@ class SecondEncryptFragment : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_second_encrypt, container, false)
         val secondMessage = SecondEncryptFragmentArgs.fromBundle(requireArguments()).secondMessage
+        val encryptConformation = SecondEncryptFragmentArgs.fromBundle(requireArguments()).encryptConformation
 
         // Printing second Message.
         val secondEncryptedView = view.findViewById<TextView>(R.id.second_encrypted_message)
-        secondEncryptedView.text = secondMessage.reversed()
+        if(encryptConformation) {
+            secondEncryptedView.text = secondMessage.reversed()
+        } else { secondEncryptedView.text = secondMessage }
 
         return view
     }

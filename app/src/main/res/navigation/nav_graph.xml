@@ -43,6 +43,9 @@
         <action
             android:id="@+id/action_encryptFragment_to_secondEncryptFragment"
             app:destination="@id/secondEncryptFragment" />
+        <argument
+            android:name="encryptConformation"
+            app:argType="boolean" />
     </fragment>
 
     <!-- 2nd Encrypt Fragment-->
@@ -54,6 +57,9 @@
         <argument
             android:name="secondMessage"
             app:argType="string" />
+        <argument
+            android:name="encryptConformation"
+            app:argType="boolean" />
     </fragment>
 
 </navigation>

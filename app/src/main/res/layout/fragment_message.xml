@@ -32,4 +32,18 @@
         android:layout_marginTop="20dp"
         android:text="@string/next" />
 
+<!--    <Switch-->
+<!--        android:id="@+id/encryptConformatio"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Do you Want to Encrypt the Message ?"-->
+<!--        android:layout_marginTop="20dp"/>-->
+
+    <CheckBox
+        android:id="@+id/encryptConformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Do you want to Encrypt the Message ?" />
+
+
 </LinearLayout>
